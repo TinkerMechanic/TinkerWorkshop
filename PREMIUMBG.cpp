@@ -25,7 +25,7 @@ class PremiumBGPrivileges : public PlayerScript
             {
                 if(player->GetSession()->GetSecurity() == SEC_PREMIUM) /* Checks if the player is PREMIUM. */
                 {
-                    player->CastSpell(player, 14185, true); 
+                    player->CastSpell(player, SPELL_ARENA_PREPARATION, true); 
                     player->GetSession()->SendNotification("NOTIFICATION_COLOR Premium members do get privileges in the Battlegrounds, to check out those privileges talk to Master Fu inside the battleground."); 
                 }
             }
